@@ -37,6 +37,6 @@ COPY go-auth.conf mosquitto/conf.d/go-auth.conf
 COPY auth/acls mosquitto/auth/acls
 COPY auth/passwords mosquitto/auth/passwords
 
-EXPOSE 1883 1884 8080
+EXPOSE 1883 1884
 
 CMD ["/usr/bin/supervisord"]
